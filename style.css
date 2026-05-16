@@ -1,40 +1,37 @@
-/* style.css - Professional Dark Theme with White Accents */
 
-/* CSS Variables */
 :root {
-  /* Dark Background Colors */
+  
   --bg-primary: #0a0a0a;
   --bg-secondary: #141414;
   --bg-tertiary: #1e1e1e;
   --bg-card: #1a1a1a;
   
-  /* Text Colors */
+
   --text-primary: #ffffff;
   --text-secondary: #e0e0e0;
   --text-muted: #a0a0a0;
   
-  /* Accent Colors (White-based) */
+
   --accent-white: #ffffff;
   --accent-off-white: #f5f5f5;
   --accent-gray: #cccccc;
   
-  /* Border & Shadow */
+
   --border-color: #2a2a2a;
   --border-light: #333333;
   --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.4);
   
-  /* Status Colors */
+
   --success: #4caf50;
   --warning: #ff9800;
   --error: #f44336;
   
-  /* Transitions */
+
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
 }
 
-/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -53,14 +50,12 @@ body {
   min-height: 100vh;
 }
 
-/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-/* Navigation */
 .top-nav {
   background-color: rgba(20, 20, 20, 0.95);
   backdrop-filter: blur(10px);
@@ -112,7 +107,6 @@ body {
   width: 100%;
 }
 
-/* Hero Section */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -178,7 +172,6 @@ body {
   border: 2px solid var(--accent-white);
 }
 
-/* Sections */
 section {
   padding: 4rem 0;
   border-bottom: 1px solid var(--border-color);
@@ -211,7 +204,6 @@ h3 {
   color: var(--text-primary);
 }
 
-/* About Section */
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -255,7 +247,6 @@ h3 {
   transform: translateY(-2px);
 }
 
-/* Projects Grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -296,8 +287,7 @@ h3 {
   color: var(--text-secondary);
   margin-top: 0.5rem;
 }
-
-/* Contact Section */
+/
 .contact-info {
   background-color: var(--bg-card);
   border-radius: 12px;
@@ -331,7 +321,6 @@ h3 {
   text-decoration: underline;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 2rem 0;
@@ -340,7 +329,6 @@ footer {
   color: var(--text-muted);
 }
 
-/* Responsive Design */
 @media (max-width: 968px) {
   .hero {
     flex-direction: column-reverse;
@@ -430,7 +418,6 @@ footer {
   }
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -448,12 +435,10 @@ footer {
   background: var(--text-muted);
 }
 
-/* Smooth Scroll Offset for Fixed Nav */
 html {
   scroll-padding-top: 80px;
 }
 
-/* Print Styles */
 @media print {
   .top-nav {
     position: static;
