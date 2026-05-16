@@ -30,6 +30,8 @@
         </div>
     </header>
 
+    
+
     <section id="about">
         <h2>About Me</h2>
         <div class="about-content">
@@ -56,15 +58,30 @@
 
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <a href="https://drive.google.com/drive/u/0/folders/1m0mgZ7KGFfdGjhzy2Z9vc2ZEPTZ2aBLp" target="_blank">
-                    <h3> Internet Cafe Management</h3>
-                </a>
-                <p><strong>Tech stack:</strong> Java + MySQL.<br>
-                A complete desktop solution to manage PC rental sessions, track time usage, handle user logs, and generate real-time revenue reports. Implements robust session control and MySQL database integration for persistent storage.</p>
-            </div>
+       <div class="project-card">
+    <a href="#cafe-popup">
+        <h3>Internet Cafe Management</h3>
+    </a>
+    <p><strong>Tech stack:</strong> Java + MySQL.<br>
+    A complete desktop solution to manage PC rental sessions, track time usage, handle user logs, and generate real-time revenue reports. Implements robust session control and MySQL database integration for persistent storage.</p>
+</div>
 
+<div id="cafe-popup" class="project-modal">
+    <div class="modal-content">
+        <a href="#" class="close-btn">&times;</a>
+        <h3>Internet Cafe Management Preview</h3>
+        
+        <div class="modal-gallery">
+            <img src="cafe1.jpg" alt="Login Screen" class="gallery-img">
+            <img src="cafe2.jpg" alt="Dashboard" class="gallery-img">
+            <img src="cafe3.jpg" alt="Billing Report" class="gallery-img">
+        </div>
+        
+        <p style="margin-bottom: 1.5rem; color: #94a3b8;">Previews: Login Interface, Admin Terminal Dashboard, and Session Billing Report.</p>
+        
+        <a href="https://drive.google.com/drive/u/0/folders/1m0mgZ7KGFfdGjhzy2Z9vc2ZEPTZ2aBLp" target="_blank" style="display: inline-block; background: #00d2ff; color: #000000; padding: 10px 20px; border-radius: 8px; font-weight: 600; text-decoration: none;">View Source on Drive</a>
+    </div>
+</div>
             <div class="project-card">
                 <a href="https://drive.google.com/drive/folders/1vY-1OF6eHKg7WTVeA9hGr58F3b26Ypxc" target="_blank">
                     <h3> Therafries POS System</h3>
