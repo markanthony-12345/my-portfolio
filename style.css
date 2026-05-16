@@ -11,7 +11,6 @@ html {
 
 body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    /* Rekta nating nilagay ang dark blue space background gradient */
     background: radial-gradient(circle at 50% 0%, #101b30 0%, #0b0f19 70%);
     color: #f8fafc;
     line-height: 1.6;
@@ -24,7 +23,6 @@ body {
     padding: 0 24px;
 }
 
-/* --- Premium Navigation (Frosted Glass Effect) --- */
 .top-nav {
     background-color: rgba(11, 15, 25, 0.75);
     backdrop-filter: blur(12px);
@@ -78,7 +76,29 @@ body {
     width: 100%;
 }
 
-/* --- Hero Section (Cyber Flare Design) --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(0, 210, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+    }
+}
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -86,6 +106,7 @@ body {
     gap: 4rem;
     padding: 6rem 0;
     flex-wrap: wrap;
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .hero-content {
@@ -122,7 +143,6 @@ body {
     text-align: center;
 }
 
-/* Avatar Cyber Circle Glow */
 .profile-circle {
     width: 290px;
     height: 290px;
@@ -130,13 +150,12 @@ body {
     border-radius: 50%;
     background: linear-gradient(135deg, #00d2ff 0%, #0055ff 100%);
     padding: 3px;
-    box-shadow: 0 0 30px rgba(0, 210, 255, 0.2);
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+    animation: neonPulse 3s infinite ease-in-out;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .profile-circle:hover {
-    transform: scale(1.03) rotate(1deg);
-    box-shadow: 0 0 45px rgba(0, 210, 255, 0.4);
+    transform: scale(1.04) rotate(2deg);
 }
 
 .profile-img {
@@ -147,7 +166,6 @@ body {
     border: 4px solid #0b0f19;
 }
 
-/* --- Global Section Settings --- */
 section {
     padding: 5rem 0;
     border-bottom: 1px solid #1e293b;
@@ -183,7 +201,6 @@ h3 {
     font-weight: 600;
 }
 
-/* --- About & Skills Layout --- */
 .about-content {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
@@ -225,11 +242,10 @@ h3 {
 .skill-list li:hover {
     background-color: #00d2ff;
     color: #000000;
-    box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
-    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+    transform: translateY(-4px);
 }
 
-/* --- Interactive Grid Project Cards --- */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -256,13 +272,13 @@ h3 {
     height: 3px;
     background: linear-gradient(90deg, transparent, #00d2ff, transparent);
     transform: translateX(-100%);
-    transition: transform 0.5s ease;
+    transition: transform 0.6s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(0, 210, 255, 0.3);
-    box-shadow: 0 15px 35px rgba(0, 210, 255, 0.08);
+    transform: translateY(-8px);
+    border-color: rgba(0, 210, 255, 0.4);
+    box-shadow: 0 15px 35px rgba(0, 210, 255, 0.12);
 }
 
 .project-card:hover::before {
@@ -289,7 +305,6 @@ h3 {
     font-size: 0.95rem;
 }
 
-/* --- Contact Info --- */
 .contact-info {
     background-color: #131a26;
     border-radius: 16px;
@@ -322,7 +337,6 @@ h3 {
     color: #00d2ff;
 }
 
-/* --- Footer --- */
 footer {
     text-align: center;
     padding: 3rem 0;
@@ -332,7 +346,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* --- Scrollbar Styling --- */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -352,7 +365,6 @@ footer {
     box-shadow: 0 0 10px #00d2ff;
 }
 
-/* --- Media Queries (Responsiveness) --- */
 @media (max-width: 968px) {
     .hero {
         flex-direction: column-reverse;
