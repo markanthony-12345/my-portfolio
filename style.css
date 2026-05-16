@@ -490,7 +490,7 @@ footer {
     background-color: #131a26;
     padding: 2rem;
     border-radius: 16px;
-    max-width: 550px; /* Saktong size para siksik ang view */
+    max-width: 550px;
     width: 90%;
     text-align: center;
     border: 1px solid #1e293b;
